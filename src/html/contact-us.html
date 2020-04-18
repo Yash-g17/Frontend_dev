@@ -17,13 +17,44 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/contact-us-style.css">
+    <script src="https://use.fontawesome.com/e5047c001d.js"></script>
+
+    <link rel="stylesheet" href="../css/contact-us-style.css">
+    <link href="../css/navbar_css.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer_css.css">
 </head>
 <body>
-    <div id="Navbar">
-        <h1>Navbar</h1>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-color">
+        <!-- Brand -->
+        <a class="navbar-brand ml-2" href="#">Harbacore</a>
+    
+        <!--Toggler/collapsibe Button -->
+        <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!--Navbar links-->
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto" id="navbar-link">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#"
+                       th:href="@{/blog/electric-vehicle/how-to-save-Rs-100-daily-with-electric-scooter}">Blogs</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#sticky-footer">Contact Us</a>
+                </li>
+    
+                <li class="nav-item mr-2">
+                    <a class="nav-link" th:href="@{/harbacore-cares/harbacore-robinhoodarmy-association-for-covid-aid}" href="#">
+                        Harbacore Cares</a>
+                </li>
+    
+                <!--<li class="nav-item mr-2">-->
+                <!--<a class="nav-link" href="#">About Us</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </nav>
     <hr>
     <!-- <center><h1>Get in touch with us</h1></center> -->
     <div id="H1">
@@ -44,7 +75,7 @@
                 </div>
                 <div id="Phone-Number" class="Form-Child">
                         <select name="country-code" id="country-code">
-                            <option value="India" id="dropdown">+91</option>
+                            <option value="India" id="dropdown">+91(Ind)</option>
                             <option value="China" id="dropdown">+XX</option>
                         </select> 
                         <!-- <label for="Phone">Phone Number</label> -->
@@ -67,40 +98,40 @@
             <div id="container-2-text">
                 <div id="content-div">
                     <div id="icon-div">
-                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span class="glyphicon glyphicon-map-marker"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                     </div>
                     <div id="text-div">
                         <div id="heading-text">
                             <h1>Address</h1>
                         </div>
                         <div id="content-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur, placeat doloremque sequi tempore at provident in cumque maxime nobis?</p>
+                            <p>105/693 N Bhannana Purwa, Kanpur, Uttar Pradesh - 208001</p>
                         </div>
                     </div>
                 </div>
                 <div id="content-div">
                     <div id="icon-div">
-                        <span class="glyphicon glyphicon-envelope"></span>
+                        <span class="glyphicon glyphicon-envelope"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                     </div>
                     <div id="text-div">
                         <div id="heading-text">
                             <h1>Email</h1>
                         </div>
                         <div id="content-text">
-                            <p>abcd@pqrs.com</p>
+                            <p>harbacore@gmail.com</p>
                         </div>
                     </div>
                 </div>
                 <div id="content-div">
                     <div id="icon-div">
-                        <span class="glyphicon glyphicon-earphone"></span>
+                        <span class="glyphicon glyphicon-earphone"><i class="fa fa-phone" aria-hidden="true"></i></span>
                     </div>
                     <div id="text-div">
                         <div id="heading-text">
                             <h1>Phone</h1>
                         </div>
                         <div id="content-text">
-                            <p>XXXXXXXXXX</p>
+                            <p>+91 - 9415302372</p>
                         </div>
                     </div>
                 </div>
@@ -110,6 +141,36 @@
         </div>
 
     </div>
+    <footer id="sticky-footer" class="py-4 text-white-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h5 class="text-white">About Company</h5>
+                    <p class="mt-2">Harbacore is an Indian startup with a strong aim to provide all best class product
+                        in the electrical, electronics and automotive sector with best affordable price and fast delivery.</p>
+                    <p><a href="#" th:href="@{/sitemap.xml}" class="text-white-50">
+                        Visit Sitemap
+                    </a> </p>
+                </div>
+    
+                <div class="col-sm-3"></div>
+    
+                <div class="col-sm-4">
+    
+                    <h5 class="text-white">Contact Us</h5>
+                    <p class="mt-2"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp 105/693 N Bhannana Purwa, Kanpur,
+                        Uttar Pradesh - 208001</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp +91 - 9415302372</p>
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp harbacore@gmail.com</p>
+    
+                </div>
+    
+            </div>
+        </div>
+        <div class="container text-center">
+            <small>Copyright &copy; Harbacore</small>
+        </div>
+    </footer>
     
 </body>
 </html>
