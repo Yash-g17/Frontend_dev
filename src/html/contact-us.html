@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact-Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/contact-us-style.css">
+</head>
+<body>
+    <div id="Navbar">
+        <h1>Navbar</h1>
+    </div>
+    <hr>
+    <!-- <center><h1>Get in touch with us</h1></center> -->
+    <div id="H1">
+        <h1 id="Heading">Get in touch with us</h1>
+    </div>
+
+    <div id="Super-Container">
+        <div id="Container-1">
+            <p id="c1head">Message Us!</p>
+            <form action="contact-us.php" id="form">
+                <div id="Name" class="Form-Child">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div id="Email" class="Form-Child">
+                    <!-- <label for="Email">Email</label> -->
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div id="Phone-Number" class="Form-Child">
+                        <select name="country-code" id="country-code">
+                            <option value="India" id="dropdown">+91</option>
+                            <option value="China" id="dropdown">+XX</option>
+                        </select> 
+                        <!-- <label for="Phone">Phone Number</label> -->
+                        <input type="tel" id="Phone" name="Phone" placeholder="Phone Number">
+                </div>
+                <div id="Message" class="Form-Child">
+                    <!-- <label for="Message">Message</label> -->
+                    <input type="text" id="message" name="Message" placeholder="Message">
+                </div>
+                <div id="Submit" class="Form-Child">
+                    <button type="submit" id="submit">Submit Now</button>
+                </div>
+            </form>
+        </div>
+        <div id="Container-2">
+            <div id="container-2-heading">
+                <img src="logo.png" alt="logo" id="logo">
+                <h1 id="logo-text">Harbacore Pvt Ltd</h1>
+            </div>
+            <div id="container-2-text">
+                <div id="content-div">
+                    <div id="icon-div">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                    </div>
+                    <div id="text-div">
+                        <div id="heading-text">
+                            <h1>Address</h1>
+                        </div>
+                        <div id="content-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aspernatur, placeat doloremque sequi tempore at provident in cumque maxime nobis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-div">
+                    <div id="icon-div">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                    <div id="text-div">
+                        <div id="heading-text">
+                            <h1>Email</h1>
+                        </div>
+                        <div id="content-text">
+                            <p>abcd@pqrs.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-div">
+                    <div id="icon-div">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                    </div>
+                    <div id="text-div">
+                        <div id="heading-text">
+                            <h1>Phone</h1>
+                        </div>
+                        <div id="content-text">
+                            <p>XXXXXXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                        
+        </div>
+
+    </div>
+    
+</body>
+</html>
