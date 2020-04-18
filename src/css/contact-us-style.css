@@ -141,6 +141,7 @@ body {
 #container-2-heading{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 #container-2-text{
     display: flex;
