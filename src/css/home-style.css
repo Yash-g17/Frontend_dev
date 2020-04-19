@@ -1,49 +1,61 @@
 html {
     --scrollbarBG: #CFD8DC;
     --thumbBG: #90A4AE;
-  }
-  body::-webkit-scrollbar {
+}
+
+body::-webkit-scrollbar {
     width: 11px;
-  }
-  body {
+}
+
+body {
     scrollbar-width: 0px;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--thumbBG) ;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
     border-radius: 6px;
     border: 0px solid var(--scrollbarBG);
-  }
-*{
+}
+
+* {
     margin: 0;
     padding: 0 0;
     /* overflow-x: hidden !important; */
 }
-#first-page{
+
+#first-page {
     overflow-x: hidden !important;
 }
-body{
+
+body {
     background-color: none;
     /* padding: 0 20px; */
     overflow-x: hidden !important;
 }
-#carousel{
+
+#carousel {
     /* margin: 30px; */
     max-width: 1200px;
     overflow-x: hidden !important;
     margin-bottom: 10px;
 }
-#offers{
+
+#offers {
     /* padding: 20px; */
     max-width: 500px;
     overflow-x: hidden !important;
 }
+
+
 /* #first-page{
     padding: 20px; */
-#card-deck{
+
+#card-deck {
     /* border: 2px black; */
     margin-right: 30px;
     margin-left: 30px;
@@ -51,69 +63,82 @@ body{
     /* height: 500px; */
     /* width: 500px; */
 }
-#EV1-card,#EV2-card{
+
+#EV1-card,
+#EV2-card {
     display: flex;
     flex-direction: row;
     border: 1.5px solid rgba(0, 0, 0, 0.2);
-
 }
-#card-container{
+
+#card-container {
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
     overflow-x: hidden !important;
 }
-.card-body{
+
+.card-body {
     width: 100%;
     overflow-x: hidden !important;
 }
-.card{
+
+.card {
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     /* background-color: gray; */
     width: 100%;
     display: inline-block;
     /* margin: 20px; */
 }
-.row-no-gutters{
+
+.row-no-gutters {
     border: 1.5px solid rgba(0, 0, 0, 0.2);
 }
-.card-img{
+
+.card-img {
     height: auto;
     width: 100%;
 }
+
+
 /* #card-container{
     justify-content: space-between;
     margin-top: 20;
 } */
-#scroll-cards{
+
+#scroll-cards {
     overflow: auto;
     /* display: flex; */
     /* flex-direction: row; */
     white-space: nowrap;
 }
-#super-container{
+
+#super-container {
     /* justify-content: space-between; */
     min-width: 0px;
 }
-#button-left{
-    align-self: right;
+
+.leftButton,
+.rightButton {
+    min-width: 60px;
 }
-#button-right{
-    align-self: left;
+
+#right-button,
+#left-button {
+    position: relative;
+    top: 40%;
+    left: 20%;
 }
-#buttons,#button-right,#button-left{
-    max-width: 100%;
-    min-width: 40px;
-    height: 100%;
-    padding: 0;
+
+.card:hover {
+    box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.4);
 }
-.card:hover{
-    box-shadow: 0 8px 26px 0 rgba(0,0,0,0.4);
-}
+
 #scroll-cards::-webkit-scrollbar {
     display: none;
-  }
-#footer{
+}
+
+#footer {
     background-color: chocolate;
     height: 50px;
 }
