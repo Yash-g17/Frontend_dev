@@ -281,6 +281,11 @@ body {
     text-align: start;
 }
 
+input:focus {
+    transform: scale(1.05);
+    border: black;
+}
+
 .glyphicon {
     font-size: 30px;
 }
