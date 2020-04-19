@@ -298,48 +298,6 @@ h4 {
     vertical-align: middle;
 }
 
-@media screen and (max-width: 768px) {
-    #logo-text {
-        margin-bottom: 50px;
-    }
-    #Heading {
-        font-size: 7vw;
-        vertical-align: middle;
-    }
-    #H1 {
-        vertical-align: middle;
-        height: 20vw;
-    }
-    #Super-Container {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        line-height: 50px;
-        /*align-items: center;*/
-        justify-content: space-between;
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-    #Container-1 {
-        width: 90%;
-        margin: 10px;
-        padding: 10px;
-        position: relative;
-        font-size: xx-large;
-        /* background-color: blue; */
-        /* border: 1px black solid; */
-        border-radius: 5px;
-        /* box-shadow: 0 0 40px gray; */
-    }
-    #Container-2 {
-        /* margin-top: 100px; */
-        padding-top: 50px;
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     #logo-text {
         margin-bottom: 50px;
@@ -363,6 +321,48 @@ h4 {
         margin: auto;
         margin-top: 50px;
         width: 70%;
+    }
+    #Container-1 {
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        font-size: xx-large;
+        /* background-color: blue; */
+        /* border: 1px black solid; */
+        border-radius: 5px;
+        /* box-shadow: 0 0 40px gray; */
+    }
+    #Container-2 {
+        /* margin-top: 100px; */
+        padding-top: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo-text {
+        margin-bottom: 50px;
+    }
+    #Heading {
+        font-size: 7vw;
+        vertical-align: middle;
+    }
+    #H1 {
+        vertical-align: middle;
+        height: 20vw;
+    }
+    #Super-Container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        /*align-items: center;*/
+        justify-content: space-between;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     #Container-1 {
         width: 90%;
