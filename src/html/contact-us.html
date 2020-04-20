@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" <head>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us harbacore</title>
+    <title>Harbacore - Contact Us</title>
+
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/e5047c001d.js"></script>
-    <link rel="stylesheet" href="../css/contact-us-style.css">
-    <link href="../css/navbar_css.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/footer_css.css">
+
+    <link href="/css/navbar_css.css" rel="stylesheet">
+    <link href="/css/footer_css.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contact_us.css">
+
+
 </head>
 
 <body>
@@ -51,18 +55,18 @@
     <div id="Super-Container">
         <div id="Container-1">
             <p id="c1head">Contact Us</p>
-            <form action="contact-us.php" id="form">
+            <form action="#" id="form" th:action="@{${blog_action_url}}" th:object="${contactUsObj}" method="post">
                 <div id="Name" class="Form-Child">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="text" th:field="*{name}" id="name" name="name" placeholder="Name" required>
                 </div>
                 <div id="Email" class="Form-Child">
-                    <input type="email" id="email" name="email" placeholder="Email" required='true' oninvalid="this.setCustomValidity('Please Enter valid email address')">
+                    <input type="email" th:field="*{email}" id="email" name="email" placeholder="Email" required='true' oninvalid="this.setCustomValidity('Please Enter valid email address')">
                 </div>
                 <div id="Phone-Number" class="Form-Child">
-                    <select name="country-code" id="country-code">
-                            <option value="India" id="dropdown">+91-India</option>
+                    <select name="country-code" th:field="*{countryCode}" id="country-code">
+                            <option value="+91 - India" id="dropdown">+91-India</option>
                         </select>
-                    <input type="tel" id="Phone" name="Phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" oninvalid="this.setCustomValidity('Please Enter valid phone number')">
+                    <input type="tel" th:field="*{phoneNo}" id="Phone" name="Phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" oninvalid="this.setCustomValidity('Please Enter valid phone number')">
                 </div>
                 <div id="Message" class="Form-Child">
                     <textarea id="message" name="Message" placeholder="Message"></textarea>

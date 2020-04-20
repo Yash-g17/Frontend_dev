@@ -36,26 +36,27 @@ body::-webkit-scrollbar-thumb {
 body {
     background-color: none;
     /* padding: 0 20px; */
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 
 #first-row-container {
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    transform: scale(1);
 }
 
 #carousel {
     /* margin: 30px; */
-    max-width: 1200px;
-    overflow-x: hidden !important;
+    max-width: 100%;
+    /* overflow-x: hidden !important; */
     margin-bottom: 10px;
 }
 
 #offers {
     /* padding: 20px; */
     min-width: 300px;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
     margin: auto;
     margin-top: 0;
     text-align: end;
