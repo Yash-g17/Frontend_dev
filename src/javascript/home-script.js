@@ -1,30 +1,30 @@
-// $('#right-button').click(function() {
-//     event.preventDefault();
-//     $('#scroll-cards').animate({
-//         scrollLeft: "+=400px"
-//     }, "slow");
-// });
-// $('#left-button').click(function() {
-//     event.preventDefault();
-//     $('#scroll-cards').animate({
-//         scrollLeft: "-=400px"
-//     }, "slow");
-// });
+$('#right-button').click(function() {
+    event.preventDefault();
+    $('#scroll-cards').animate({
+        scrollLeft: "+=400px"
+    }, "slow");
+});
+$('#left-button').click(function() {
+    event.preventDefault();
+    $('#scroll-cards').animate({
+        scrollLeft: "-=400px"
+    }, "slow");
+});
 
-var parent = document.getElementById('scroll-cards');
-var child = document.getElementsByClassName('card');
-child.style.paddingBottom = child.offsetWidth - child.clientWidth + "px";
+// var parent = document.getElementById('scroll-cards');
+// var child = document.getElementsByClassName('card');
+// child.style.paddingBottom = child.offsetWidth - child.clientWidth + "px";
+const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+var y = document.getElementById('first-row-container').offsetWidth;
 
-// function scalingfunction() {
-//     x = 0.5;
-//     document.getElementById('first-row-container').style.transform = ("scale(" + x + ")");
-//     console.log(10);
-// }
-// document.querySelector("#first-row-container").addEventListener('resize', scalingfunction());
-
-function test() {
-    alert("asdasdsa");
-    console.log(10);
+function scalingFunction() {
+    console.log("y=" + y);
+    x = ((body.innerWidth) / (y));
+    console.log("x=" + x);
+    console.log("inner width" + window.innerWidth);
+    document.getElementById('first-row-container').style.transform = ("scale(" + x + ")");
+    console.log(document.getElementById('first-row-container').offsetWidth);
+    // document.getElementById('first-row-container').style.transform
 }
-document.querySelector("body").addEventListener('click', test);
-document.write(5 + 6);
+window.addEventListener('resize', scalingFunction);

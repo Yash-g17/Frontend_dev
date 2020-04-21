@@ -40,10 +40,11 @@ body {
 }
 
 #first-row-container {
-    /* display: flex; */
+    display: flex;
     /* align-items: center; */
     /* justify-content: space-around; */
-    transform: scale(1);
+    /* transform: scale(1); */
+    width: 100%;
 }
 
 #carousel {
@@ -55,17 +56,11 @@ body {
 
 #offers {
     /* padding: 20px; */
-    min-width: 300px;
+    /* min-width: 300px; */
     /* overflow-x: hidden !important; */
     margin: auto;
     margin-top: 0;
-    text-align: end;
-}
-
-#EV2-card,
-#EV1-card {
-    max-width: 800px;
-    align-self: center;
+    /* text-align: start; */
 }
 
 
@@ -83,8 +78,10 @@ body {
     /* width: 500px; */
 }
 
-#EV1-card,
-#EV2-card {
+#EV2-card,
+#EV1-card {
+    max-width: 800px;
+    align-self: center;
     display: flex;
     flex-direction: row;
     border: 1.5px solid rgba(0, 0, 0, 0.2);
