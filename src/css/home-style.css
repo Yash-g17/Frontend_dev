@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb {
 
 * {
     margin: 0;
-    padding: 0 0;
+    padding: 0;
     /* overflow-x: hidden !important; */
 }
 
@@ -63,10 +63,6 @@ body {
     /* text-align: start; */
 }
 
-
-/* #first-page{
-    padding: 20px; */
-
 #card-deck {
     /* border: 2px black; */
     display: flex;
@@ -74,8 +70,6 @@ body {
     margin-left: 30px;
     overflow-x: hidden !important;
     align-content: center;
-    /* height: 500px; */
-    /* width: 500px; */
 }
 
 #EV2-card,
@@ -86,7 +80,8 @@ body {
     flex-direction: row;
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     align-self: center;
-    margin: auto;
+    margin: 10px;
+    padding: 0;
 }
 
 #card-container {
