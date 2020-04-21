@@ -28,10 +28,10 @@ body::-webkit-scrollbar-thumb {
     /* overflow-x: hidden !important; */
 }
 
-
-/* #first-page {
+#first-page {
     overflow-x: hidden !important;
-} */
+    justify-content: space-around;
+}
 
 body {
     background-color: none;
@@ -42,7 +42,7 @@ body {
 #first-row-container {
     display: flex;
     /* align-items: center; */
-    /* justify-content: space-around; */
+    justify-content: space-around;
     /* transform: scale(1); */
     width: 100%;
 }
