@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden !important; */
+    overflow-x: hidden !important;
 }
 
 #first-page {
@@ -60,7 +60,10 @@ body {
     /* overflow-x: hidden !important; */
     margin: auto;
     margin-top: 0;
-    /* text-align: start; */
+    align-self: center;
+    /* align-content: center; */
+    text-align: center;
+    vertical-align: middle;
 }
 
 #card-deck {
@@ -124,11 +127,20 @@ body {
     /* display: flex; */
     /* flex-direction: row; */
     white-space: nowrap;
+    overflow-x: scroll;
+}
+
+#scroll-cards-container {
+    overflow-x: scroll;
 }
 
 #super-container {
     /* justify-content: space-between; */
     min-width: 0px;
+}
+
+.card {
+    max-width: 30vw
 }
 
 .leftButton,

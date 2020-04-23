@@ -18,13 +18,13 @@ $('#left-button').click(function() {
 // const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 // var y = document.getElementById('first-row-container').offsetWidth;
 
-// function scalingFunction() {
-//     console.log("y=" + y);
-//     x = ((body.innerWidth) / (y));
-//     console.log("x=" + x);
-//     console.log("inner width" + window.innerWidth);
-//     document.getElementById('first-row-container').style.transform = ("scale(" + x + ")");
-//     console.log(document.getElementById('first-row-container').offsetWidth);
-//     // document.getElementById('first-row-container').style.transform
-// }
-// window.addEventListener('resize', scalingFunction);
+function scalingFunction() {
+    console.log("y=" + y);
+    x = ((body.innerWidth) / (y));
+    console.log("x=" + x);
+    console.log("inner width" + window.innerWidth);
+    document.getElementsByClassName('card').style.width = (x / 8);
+    console.log(document.getElementById('first-row-container').offsetWidth);
+    // document.getElementById('first-row-container').style.transform
+}
+window.addEventListener('resize', scalingFunction);
