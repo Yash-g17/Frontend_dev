@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#body-container {
+    justify-content: space-between;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: circularstd, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+
+#tag {
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    color: red;
+}
+
+#blog-title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+}
+
+#highlights {
+    font-size: 2.5rem;
+    color: #818181;
+    padding-left: 5rem;
+}
+
+#main-blog {
+    background: #fff;
+    border-radius: .9375rem;
+    border: .09375rem solid #e6e6e6;
+    margin: 0 0 1.25rem;
+    margin-top: 0px;
+    padding: 2.1875rem 2.5rem;
+    overflow: hidden;
+    padding: 5rem;
+}
+
+#sidebar {
+    background: #fff;
+    border-radius: .9375rem;
+    border: .09375rem solid #e6e6e6;
+    margin: 0 0 1.25rem;
+    margin-top: 0px;
+    padding: 2.1875rem 2.5rem;
+    overflow: hidden;
+    display: inline-block;
+    max-height: fit-content;
+}
