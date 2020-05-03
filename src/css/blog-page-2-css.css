@@ -7,10 +7,11 @@
     border: 1px black solid;
     border-radius: 10px;
     background-color: #ffffff;
+    margin: 50px;
 }
 
 #body-container {
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 body {
@@ -34,6 +35,27 @@ body {
     font-weight: 700;
     line-height: 1.2;
     font-size: 4rem;
+    text-align: center;
+}
+
+#author-info {
+    display: flex;
+    justify-content: center;
+}
+
+#author-text {
+    display: inline-block;
+}
+
+#sharing-1 {
+    text-align: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+#sharing-icon-1 {
+    width: fit-content;
+    display: inline-block;
 }
 
 #highlights {
@@ -62,5 +84,10 @@ body {
     padding: 2.1875rem 2.5rem;
     overflow: hidden;
     display: inline-block;
-    max-height: fit-content;
+    /* height: fit-content; */
+    /* min-height: 200px; */
+}
+
+#sidebar-heading {
+    font-weight: 600;
 }
