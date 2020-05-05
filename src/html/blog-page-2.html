@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/bootstrap-horizon/bootstrap-horizon.css">
     <title>Blog-page</title>
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Bree+Serif|Crete+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/blog-page-2-css.css">
 </head>
 
@@ -19,29 +20,36 @@
     <div class="container" id="navbar">
         <nav>navbar</nav>
     </div>
-    <div class="container">
-        <div id="body-container">
-            <div class="col-lg-8" id="main-blog">
+    <div class="container" id="body-container">
+        <div class="row" id="body-row">
+            <div class="col-lg-8 col-sm-12" id="main-blog">
                 <h4 id="tag">content-tag</h4>
                 <h1 id="blog-title">#Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem aperiam tenetur nulla nemo labore nesciunt?</h1>
                 <br>
-                <div class="row">
-                    <div class="col-sm-6" id="author-info">
-                        <p id="author-text">Author Info</p>
+                <div class="row" id="info" style="line-height: 1.2rem;">
+                    <div class="col-sm-8" id="author-info">
+                        <div class="col-3">
+                            <p>image</p>
+                        </div>
+                        <div class="col-8">
+                            <p>Author-name</p>
+                            <p>Read time</p>
+                            <p>date</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6" id="sharing-1">
+                    <div class="col-sm-4" id="sharing-1">
+                        <p style="color: #818181; line-height: 1.7rem;">Share this article</p>
                         <!-- AddToAny BEGIN -->
                         <div class="a2a_kit a2a_kit_size_32 a2a_default_style" id="sharing-icon-1">
                             <a class="a2a_button_facebook"></a>
                             <a class="a2a_button_twitter"></a>
-                            <a class="a2a_button_email"></a>
                             <a class="a2a_button_whatsapp"></a>
                         </div>
                         <script async src="https://static.addtoany.com/menu/page.js"></script>
                         <!-- AddToAny END -->
                     </div>
                 </div>
-                <br>
+                <!-- <br> -->
                 <hr>
                 <ul id="highlights">
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, nam!</li>
@@ -66,9 +74,12 @@
                     id vitae numquam labore nam voluptatem aliquid in quia. Amet, nam. Maiores recusandae, vitae quam dolores facilis nam cupiditate accusamus magni minima eaque dolorem esse cum aliquid eligendi vero itaque officiis fuga iure placeat
                     quibusdam id. Provident vel ea, id mollitia temporibus repellat cupiditate maxime eius similique officia dolores corporis architecto autem. Rerum quod velit fuga animi exercitationem totam ullam laboriosam voluptatem vitae!</p>
             </div>
-            <div class="col-lg-4" id="sidebar">
-                <h2 id="sidebar-heading">Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit dolore amet debitis quod rerum ipsam soluta ad maxime mollitia numquam?</p>
+            <div class="col-lg-3 col-sm-12" id="sidebar">
+                <div id="sidebar-2">
+                    <h2 id="sidebar-heading">Lorem, ipsum dolor.</h2>
+                    <p id="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam dolorum voluptatem dignissimos ipsum voluptates hic facere nostrum provident est aut quibusdam, quisquam deserunt. Tempore eligendi aut, sapiente non natus reprehenderit
+                        dolor corporis temporibus tenetur adipisci enim inventore eveniet ipsum aliquam qui molestiae molestias quis minima voluptates, placeat deserunt vitae.</p>
+                </div>
             </div>
         </div>
     </div>
