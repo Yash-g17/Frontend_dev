@@ -1,33 +1,35 @@
 let x;
+let t;
 
-function color1() {
-    document.getElementById("star1").style.color = "yellow";
+function color1(t) {
+    alert(t);
+    document.getElementById("star1").style.color = "gold";
 }
 
 function color2() {
-    document.getElementById("star1").style.color = "yellow";
-    document.getElementById("star2").style.color = "yellow";
+    document.getElementById("star1").style.color = "gold";
+    document.getElementById("star2").style.color = "gold";
 }
 
 function color3() {
-    document.getElementById("star1").style.color = "yellow";
-    document.getElementById("star2").style.color = "yellow";
-    document.getElementById("star3").style.color = "yellow";
+    document.getElementById("star1").style.color = "gold";
+    document.getElementById("star2").style.color = "gold";
+    document.getElementById("star3").style.color = "gold";
 }
 
 function color4() {
-    document.getElementById("star1").style.color = "yellow";
-    document.getElementById("star2").style.color = "yellow";
-    document.getElementById("star3").style.color = "yellow";
-    document.getElementById("star4").style.color = "yellow";
+    document.getElementById("star1").style.color = "gold";
+    document.getElementById("star2").style.color = "gold";
+    document.getElementById("star3").style.color = "gold";
+    document.getElementById("star4").style.color = "gold";
 }
 
 function color5() {
-    document.getElementById("star1").style.color = "yellow";
-    document.getElementById("star2").style.color = "yellow";
-    document.getElementById("star3").style.color = "yellow";
-    document.getElementById("star4").style.color = "yellow";
-    document.getElementById("star5").style.color = "yellow";
+    document.getElementById("star1").style.color = "gold";
+    document.getElementById("star2").style.color = "gold";
+    document.getElementById("star3").style.color = "gold";
+    document.getElementById("star4").style.color = "gold";
+    document.getElementById("star5").style.color = "gold";
 }
 
 function normalColor1() {
@@ -63,13 +65,13 @@ function normalColor5() {
 function clicked() {
     let i;
     for (i = 1; i <= x; i++) {
-        document.getElementById("star" + i).style.color = "yellow";
+        document.getElementById("star" + i).style.color = "gold";
     }
     for (i; i <= 5; i++) {
         document.getElementById("star" + i).style.color = "black";
     }
     console.log(x);
-    document.getElementById("star1").removeEventListener("mouseover", color1);
+    document.getElementById("star1").removeEventListener("mouseover", color1("1"));
     document.getElementById("star2").removeEventListener("mouseover", color2);
     document.getElementById("star3").removeEventListener("mouseover", color3);
     document.getElementById("star4").removeEventListener("mouseover", color4);
